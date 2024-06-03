@@ -6,7 +6,7 @@ body, h1, h2, h3, p, ul, li {
 body {
   font-family: Arial, sans-serif;
   background-color: #f7f7f7;
-  perspective: 1000px;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 .container {
   max-width: 1200px;
@@ -28,16 +28,20 @@ nav ul li {
   display: inline-block;
   margin-right: 20px;
 }
-.hero {
-  background-image: url('hero.jpg');
+.hero,
+.section {
+  height: 100vh; /* Full viewport height */
   background-size: cover;
+  background-attachment: fixed; /* Parallax effect */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  color: #fff;
-  padding: 100px 0;
   position: relative;
   z-index: 1;
 }
-.hero:before {
+.hero:before,
+.section:before {
   content: '';
   position: absolute;
   top: 0;
@@ -47,9 +51,11 @@ nav ul li {
   background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
   z-index: -1;
 }
-.hero h2 {
+.hero h2,
+.section h2 {
   font-size: 36px;
   margin-bottom: 20px;
+  color: #fff;
 }
 .btn {
   display: inline-block;
@@ -61,32 +67,6 @@ nav ul li {
 }
 .btn:hover {
   background-color: #555;
-}
-.section {
-  height: 500px;
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  position: relative;
-  z-index: 1;
-}
-.section:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
-  z-index: -1;
-}
-.section h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
 }
 .products {
   padding: 50px 0;
@@ -119,4 +99,78 @@ footer {
   padding: 10px 0;
   position: relative;
   z-index: 1;
+}
+/* Fixed header */
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header h1 {
+  font-size: 24px;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+nav ul li {
+  margin-right: 20px;
+}
+nav ul li:last-child {
+  margin-right: 0;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Fixed footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+.footer .container {
+  text-align: center;
+}
+
+/* Background elements */
+.background-elements {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: -1;
+}
+.background-elements::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('images/octagon.png'); /* Replace 'octagon.png' with your image */
+  background-size: contain;
+  background-repeat: repeat;
+  opacity: 0.3;
 }

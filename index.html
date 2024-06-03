@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header>
+<header class="header">
   <div class="container">
     <h1>Vintage Card Emporium</h1>
     <nav>
@@ -21,46 +21,35 @@
     </nav>
   </div>
 </header>
-<section class="hero">
-  <div class="container">
-    <h2>Discover Rare and Unique Vintage Cards</h2>
-    <a href="#" class="btn">Shop Now</a>
-  </div>
-</section>
-<section class="section" style="background-image: url('section1.jpg');">
-  <div class="container">
-    <h2>Section 1</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-  </div>
-</section>
-<section class="section" style="background-image: url('section2.jpg');">
-  <div class="container">
-    <h2>Section 2</h2>
-    <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-  </div>
-</section>
-<section class="products">
-  <div class="container">
-    <h2>Featured Products</h2>
-    <div class="product">
-      <img src="card1.jpg" alt="Vintage Card">
-      <h3>Card Name</h3>
-      <p>$50.00</p>
-      <a href="#" class="btn">Add to Cart</a>
+<div class="sections-container">
+  <section id="hero" class="hero" style="background-image: url('images/hero.jpg');">
+    <div class="container">
+      <h2>Discover Rare and Unique Vintage Cards</h2>
+      <a href="#" class="btn">Shop Now</a>
     </div>
-    <div class="product">
-      <img src="card2.jpg" alt="Vintage Card">
-      <h3>Card Name</h3>
-      <p>$75.00</p>
-      <a href="#" class="btn">Add to Cart</a>
+  </section>
+  <section id="section1" class="section" style="background-image: url('images/section1.jpg');">
+    <div class="container">
+      <h2>Section 1</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </div>
-    <!-- Add more products here -->
-  </div>
-</section>
-<footer>
+  </section>
+  <section id="section2" class="section" style="background-image: url('images/section2.jpg');">
+    <div class="container">
+      <h2>Section 2</h2>
+      <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+  </section>
+  <!-- Add more sections here -->
+</div>
+<footer class="footer">
   <div class="container">
     <p>&copy; 2024 Vintage Card Emporium. All Rights Reserved.</p>
   </div>
 </footer>
+<div class="background-elements">
+  <!-- Add floating elements like octagons here -->
+</div>
+<script src="script.js"></script>
 </body>
 </html>

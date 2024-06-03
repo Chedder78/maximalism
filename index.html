@@ -1,227 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Maximalist Webpage</title>
-    <style>
-        /* General Style */
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
-            background-color: #fff;
-        }
-
-        /* Header Styles */
-        header {
-            text-align: center;
-            background-color: #ffcc00; /* Change this color to match your theme */
-            padding: 50px 0;
-        }
-
-        .xxl-title h1 {
-            font-size: 4em; /* Adjust the size as needed */
-            color: #000; /* Change the text color */
-        }
-
-        /* Navigation Styles */
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin: 0 15px; /* Adjust spacing between links */
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: #000; /* Change link color */
-            font-size: 1.2em; /* Adjust link size */
-        }
-
-        /* Button Styles */
-        .gigantic-button {
-            background-color: #ff0000; /* Change button color */
-            color: #fff; /* Change text color */
-            padding: 20px 40px; /* Adjust padding */
-            border: none;
-            font-size: 1.5em; /* Adjust font size */
-            margin-top: 20px;
-            cursor: pointer;
-        }
-
-        /* Toggle Switch Styles */
-        .toggle-switch {
-            margin-top: 20px;
-            padding: 10px 20px;
-            font-size: 1em;
-            cursor: pointer;
-        }
-
-        /* Loop Scrolling Styles */
-        .loop-scrolling {
-            display: flex;
-            flex-wrap: nowrap;
-            overflow-x: auto;
-            white-space: nowrap;
-        }
-
-        /* Bento Box Styles */
-        .bentobox {
-            display: inline-block;
-            width: 300px; /* Adjust width */
-            height: 300px; /* Adjust height */
-            margin: 20px;
-            padding: 20px;
-            background-color: #f0f0f0; /* Change background color */
-            border: 2px solid #ccc; /* Change border color */
-            text-align: center;
-            white-space: normal;
-        }
-
-        /* Footer Styles */
-        footer {
-            background-color: #ffcc00; /* Change footer background color */
-            text-align: center;
-            padding: 50px 0;
-        }
-
-        .xxl-footer h2 {
-            font-size: 3em; /* Adjust footer title size */
-            margin: 0;
-        }
-
-        /* Dark Theme Styles */
-        .dark-theme {
-            background-color: #000; /* Change background color for dark theme */
-            color: #fff; /* Change text color for dark theme */
-        }
-
-        .dark-theme header,
-        .dark-theme footer {
-            background-color: #333; /* Change header and footer color for dark theme */
-            color: hsla(0, 0%, 100%, 0.956); /* Change text color for dark theme */
-        }
-
-        .dark-theme .gigantic-button {
-            background-color: #666; /* Change button color for dark theme */
-        }
-
-        .dark-theme .bentobox {
-            background-color: #444; /* Change background color for bento boxes in dark theme */
-            border-color: #666; /* Change border color for bento boxes in dark theme */
-        }
-    </style>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vintage Card Emporium</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="xxl-title">
-        <!-- Main Title -->
-        <h1>Welcome to the CaliDef </h1>
-        <nav>
-            <ul>
-                <!-- Navigation Links -->
-                <li><a href="#OS2_Sets">Series 2</a></li>
-                <li><a href="#OS3_Sets">Series 3</a></li>
-                <li><a href="#OS4_Sets">Series 4</a></li>
-                <li><a href="#OS5_Sets">Series 5</a></li>
-                <li><a href="#OS6_Sets">Series 6</a></li>
-                <li><a href="#OS7_Sets">Series 7</a></li>
-                <li><a href="#OS8_Sets">Series 8</a></li>
-                <li><a href="#OS9_Sets">Series 9</a></li>
-                <li><a href="OS10_Sets">Series 10</a></li>
-                <li><a href="OS11_Sets">Series 11</a></li>
-                <li><a href="OS12_Sets">Series 12</a></li>
-                <li><a href="OS13_Sets">Series 13</a></li>
-                <li><a href="OS14_Sets">Series 14</a></li>
-            </ul>
-        </nav>
-        <!-- Toggle Switch for Theme Change -->
-        <button class="toggle-switch">Toggle Theme</button>
-    </header>
-    
-    <main class="loop-scrolling">
-        <!-- Sections for Different Styles -->
-        <section id="#OS2_Sets" class="bentobox">
-            <h2>Series 2</h2>
-            <p></p>
-        </section>
-        
-        <section id="#OS3_Sets" class="bentobox">
-            <h2>Series 3</h2>
-            <p></p>
-        </section>
-
-        <section id="#OS4_Sets" class="bentobox">
-            <h2>Series 4</h2>
-            <p></p>
-        </section>
-
-        <section id="#OS5_Sets" class="bentobox">
-            <h2>Series 5</h2>
-            <p></p>
-        </section>
-
-        <section id="#OS6_Sets" class="bentobox">
-            <h2>Series 6</h2>
-            <p></p>
-        </section>
-
-        <section id="#OS7_Sets" class="bentobox">
-            <h2>Series 7</h2>
-            <p></p>
-        </section>
-
-        <section id="OS8_Sets" class="bentobox">
-            <h2>Series 8</h2>
-            <p></p>
-        </section>
-
-        <section id="#OS9_Sets" class="bentobox">
-            <h2>Series 9</h2>
-            <p></p>
-        </section>
-
-        <section id="OS10_Sets" class="bentobox">
-            <h2>Series 10</h2>
-            <p></p>
-        </section>
-
-        <section id="OS11_Sets" class="bentobox">
-            <h2>Series 11</h2>
-            <p></p>
-        </section>
-
-        <section id="OS12_Sets" class="bentobox">
-            <h2>Series 12</h2>
-            <p></p>
-        </section>
-
-        <section id="OS13_Sets" class="bentobox">
-            <h2>Series 13</h2>
-            <p></p>
-        </section>
-
-        <section id="OS14_Sets" class="bentobox">
-            <h2>Series 14</h2>
-            <p></p>
-        </section>
-    </main>
-
-    <footer class="xxl-title">
-        <h2>CaliDef: The Bootloot Empire</h2>
-        <p>&copy; 2024 CaliDef Webpage</p>
-    </footer>
-
-    <script>
-        // Add event listener for the toggle switch
-        document.querySelector('.toggle-switch').addEventListener('click', () => {
-            // Toggle the dark theme class
-            document.body.classList.toggle('dark-theme');
-        });
-    </script>
+<header>
+  <div class="container">
+    <h1>Vintage Card Emporium</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<section class="hero">
+  <div class="container">
+    <h2>Discover Rare and Unique Vintage Cards</h2>
+    <a href="#" class="btn">Shop Now</a>
+  </div>
+</section>
+<section class="section" style="background-image: url('section1.jpg');">
+  <div class="container">
+    <h2>Section 1</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </div>
+</section>
+<section class="section" style="background-image: url('section2.jpg');">
+  <div class="container">
+    <h2>Section 2</h2>
+    <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+</section>
+<section class="products">
+  <div class="container">
+    <h2>Featured Products</h2>
+    <div class="product">
+      <img src="card1.jpg" alt="Vintage Card">
+      <h3>Card Name</h3>
+      <p>$50.00</p>
+      <a href="#" class="btn">Add to Cart</a>
+    </div>
+    <div class="product">
+      <img src="card2.jpg" alt="Vintage Card">
+      <h3>Card Name</h3>
+      <p>$75.00</p>
+      <a href="#" class="btn">Add to Cart</a>
+    </div>
+    <!-- Add more products here -->
+  </div>
+</section>
+<footer>
+  <div class="container">
+    <p>&copy; 2024 Vintage Card Emporium. All Rights Reserved.</p>
+  </div>
+</footer>
 </body>
 </html>

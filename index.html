@@ -2,54 +2,182 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vintage Card Emporium</title>
-<link rel="stylesheet" href="style.css">
+<title>CaliDef Landing Page</title>
+<style>
+/* CSS Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  overflow-x: hidden; /* Disable horizontal scroll */
+}
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+section {
+  padding: 100px 0;
+  text-align: center;
+}
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+/* Glassmorphism Effect */
+.glass {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+}
+/* LED Lightbox Animation */
+@keyframes lightbox {
+  0% {
+    box-shadow: 0 0 20px #00ff00;
+  }
+  50% {
+    box-shadow: 0 0 50px #00ff00;
+  }
+  100% {
+    box-shadow: 0 0 20px #00ff00;
+  }
+}
+.lightbox {
+  animation: lightbox 1s infinite;
+}
+/* Additional Styling for Parallax */
+.parallax1 {
+  background-image: url('https://m.media-amazon.com/images/I/71hAdZ3N4UL._AC_UF1000,1000_QL80_.jpg');
+  height: 500px; /* Adjust height as needed */
+}
+.parallax2 {
+  background-image: url('https://ripped.topps.com/wp-content/uploads/2023/02/Topps-BrandCards-GPK-v1.jpg');
+  height: 500px; /* Adjust height as needed */
+}
+.parallax3 {
+  background-image: url('https://res.cloudinary.com/teepublic/image/private/s--xUIoGMON--/c_crop,x_10,y_10/c_fit,w_992/c_crop,g_north_west,h_827,w_1127,x_-68,y_-235/l_misc:transparent_1260/fl_layer_apply,g_north_west,x_-134,y_-447/c_mfit,g_north_east,u_misc:tapestry-l-s-gradient/e_displace,fl_layer_apply,x_0,y_34/l_upload:v1507037315:production:blanks:uue6kkaylik55suzvwsb/fl_layer_apply,g_north_west,x_0,y_0/b_rgb:ffb81c/c_limit,f_auto,h_630,q_auto:good:420,w_630/v1565114585/production/designs/5530730_0.jpg');
+  height: 500px; /* Adjust height as needed */
+}
+/* Additional Parallax Sections */
+.parallax4 {
+  background-image: url('https://m.media-amazon.com/images/I/71rlNgh3MQL.jpg');
+  height: 500px; /* Adjust height as needed */
+}
+.parallax5 {
+  background-image: url('https://cdn11.bigcommerce.com/s-83f4fr9vsn/images/stencil/1280x1280/products/258/682/GPK_rocks_back__82896.1592234403.png?c=1');
+  height: 500px; /* Adjust height as needed */
+}
+.parallax6 {
+  background-image: url('https://i.etsystatic.com/35979416/r/il/e7a66f/4653492071/il_fullxfull.4653492071_3we2.jpg');
+  height: 500px; /* Adjust height as needed */
+}
+</style>
 </head>
 <body>
-<header class="header">
-  <div class="container">
-    <h1>Vintage Card Emporium</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Shop</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
+<header>
+  <h1>CaliDef The Bootloot Empire</h1>
+  <nav>
+    <ul>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 </header>
-<div class="sections-container">
-  <section id="hero" class="hero" style="background-image: href='Default_Upward_splashing_chaotic_paint_splatters_and_spalshes_1_a08e382d-0736-4c65-8805-2cac37feaacd_0.jpg');">
-    <div class="container">
-      <h2>Discover Rare and Unique Vintage Cards</h2>
-      <a href="#" class="btn">Shop Now</a>
-    </div>
-  </section>
-  <section id="section1" class="section" style="background-image: url('images/section1.jpg');">
-    <div class="container">
-      <h2>Section 1</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
-  </section>
-  <section id="section2" class="section" style="background-image: url('images/section2.jpg');">
-    <div class="container">
-      <h2>Section 2</h2>
-      <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-  </section>
-  <!-- Add more sections here -->
-</div>
-<footer class="footer">
+<section id="features" class="parallax parallax1">
   <div class="container">
-    <p>&copy; 2024 Vintage Card Emporium. All Rights Reserved.</p>
+    <h2>Our Features</h2>
+    <div class="glass">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae urna eu arcu vehicula pharetra. Nullam et quam nec libero finibus varius.</p>
+    </div>
+    <a href="#" class="button">Learn More</a>
   </div>
+</section>
+<section id="portfolio" class="parallax parallax2">
+  <div class="container">
+    <h2>Our Portfolio</h2>
+    <div class="glass">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae urna eu arcu vehicula pharetra. Nullam et quam nec libero finibus varius.</p>
+    </div>
+    <a href="#" class="button">View Portfolio</a>
+  </div>
+</section>
+<section id="contact" class="parallax parallax3">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <div class="glass">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae urna eu arcu vehicula pharetra. Nullam et quam nec libero finibus varius.</p>
+    </div>
+    <a href="#" class="button">Get in Touch</a>
+  </div>
+</section>
+<section class="parallax parallax4">
+  <div class="container">
+    <h2>Additional Section 1</h2>
+    <div class="glass">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae urna eu arcu vehicula pharetra. Nullam et quam nec libero finibus varius.</p>
+    </div>
+  </div>
+</section>
+<section class="parallax parallax5">
+  <div class="container">
+    <div class="container">
+    <h2>Additional Section 2</h2>
+    <div class="glass">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae urna eu arcu vehicula pharetra. Nullam et quam nec libero finibus varius.</p>
+    </div>
+  </div>
+</section>
+<section class="parallax parallax6">
+  <div class="container">
+    <h2>Additional Section 3</h2>
+    <div class="glass">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae urna eu arcu vehicula pharetra. Nullam et quam nec libero finibus varius.</p>
+    </div>
+  </div>
+</section>
+<footer>
+  <p>&copy; 2024 CaliDef Web Design. All rights reserved.</p>
 </footer>
-<div class="background-elements">
-  <!-- Add floating elements like octagons here -->
-</div>
-<script src="script.js"></script>
 </body>
 </html>

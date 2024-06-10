@@ -24,7 +24,7 @@ body {
   }
   @font-face {
     font-family: 'Windsor';
-    src: url('/maximalism/Windsor Regular.ttf') format('truetype');
+    src: url('Windsor Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }
@@ -34,7 +34,7 @@ header {
   font-size: 25px; /* Font size no larger than 25px */
   text-align: center;    
   color: #39FF14; /* Neon green color */
-  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.5); /* White blurry shadows */
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.5); /* White blurry shadows */
   background-color: #000; /* Black background */
 }
 nav ul {
@@ -72,25 +72,6 @@ section {
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
-}
-  @keyframes reflective-lightbox {
-    0% {
-        background-position: -200% -200%;
-    }
-    100% {
-        background-position: 200% 200%;
-    }
-}
-
-.lightbox::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(145deg, transparent, rgba(255, 255, 255, 0.5), transparent);
-    animation: reflective-lightbox 2s infinite;
 }
 footer {
   padding: 20px;

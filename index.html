@@ -1,206 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CaliDef Landing Page</title>
-<style>
-/* CSS Styles */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f8f9fa;
-  overflow-x: hidden; /* Disable horizontal scroll */
-  margin: 0;
-  font-family: 'Windsor', sans-serif;
-  color: black;
-}
-  @font-face {
-    font-family: 'Melted Monster';
-    src: url('Melted Monster.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: 'Windsor';
-    src: url('Windsor Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-header {
-  padding: 20px;
-  font-family: 'Melted Monster', serif;
-  font-size: 25px; /* Font size no larger than 25px */
-  text-align: center;    
-  color: #39FF14; /* Neon green color */
-  text-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.5); /* White blurry shadows */
-  background-color: #000; /* Black background */
-}
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-nav ul li {
-  display: inline-block;
-  margin: 0 10px;
-}
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-section {
-  padding: 100px 0;
-  text-align: center;
-}
-.parallax {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-.button {
-  display: inline-block;
-  padding: 10px 20px;
-  margin-top: 20px;
-  background-color: #007bff;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-}
-footer {
-  padding: 20px;
-  font-family: 'Melted Monster', serif;
-  font-size: 25px; /* Font size no larger than 25px */
-  text-align: center;    
-  color: #39FF14; /* Neon green color */
-  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.5); /* White blurry shadows */
-  background-color: #000; /* Black background */
-  
-
-}
-/* Glassmorphism Effect */
-.glass {
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(10px);
-  border-radius: 10px;
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 800px;
-}
-/* LED Lightbox Animation */
-@keyframes lightbox {
-  0% {
-    box-shadow: 0 0 20px #00ff00;
-  }
-  50% {
-    box-shadow: 0 0 50px #00ff00;
-  }
-  100% {
-    box-shadow: 0 0 20px #00ff00;
-  }
-}
-.lightbox {
-  animation: lightbox 1s infinite;
-}
-/* Additional Styling for Parallax */
-.parallax1 {
-  background-image: url('calidef_bootleg_empire.jpg');
-  height: 500px; /* Adjust height as needed */
-}
-.parallax2 {
-  background-image: url('bukimi_kun_design.jpg');
-  height: 500px; /* Adjust height as needed */
-}
-.parallax3 {
-  background-image: url('https://res.cloudinary.com/teepublic/image/private/s--xUIoGMON--/c_crop,x_10,y_10/c_fit,w_992/c_crop,g_north_west,h_827,w_1127,x_-68,y_-235/l_misc:transparent_1260/fl_layer_apply,g_north_west,x_-134,y_-447/c_mfit,g_north_east,u_misc:tapestry-l-s-gradient/e_displace,fl_layer_apply,x_0,y_34/l_upload:v1507037315:production:blanks:uue6kkaylik55suzvwsb/fl_layer_apply,g_north_west,x_0,y_0/b_rgb:ffb81c/c_limit,f_auto,h_630,q_auto:good:420,w_630/v1565114585/production/designs/5530730_0.jpg');
-  height: 500px; /* Adjust height as needed */
-}
-/* Additional Parallax Sections */
-.parallax4 {
-  background-image: url('https://m.media-amazon.com/images/I/71rlNgh3MQL.jpg');
-  height: 500px; /* Adjust height as needed */
-}
-.parallax5 {
-  background-image: url('https://cdn11.bigcommerce.com/s-83f4fr9vsn/images/stencil/1280x1280/products/258/682/GPK_rocks_back__82896.1592234403.png?c=1');
-  height: 500px; /* Adjust height as needed */
-}
-.parallax6 {
-  background-image: url('gpk_faces.jpg');
-  height: 500px; /* Adjust height as needed */
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neumorphism and Maximalism Ecommerce</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="lightbox">
-  <h1>CaliDef The Bootloot Empire</h1>
-  <nav>
-    <ul>
-      <li><a href="#features">Features</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
-<section id="features" class="parallax parallax1">
-  <div class="container">
-    <h2>Original Series 2</h2>
-    <div class="glass">
-      <p>We have several sets of OS2 available. including a matte back set, a glossy Messy Tessy set, and a Live Mike set. We also have OS2 sets with a mix of both glossy puzzle backs.</p>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        </nav>
+    </header>
+
+    <div class="sliding-menu" id="menu" role="navigation" aria-label="Main Menu">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </div>
-    <a href="#" class="button">Learn More</a>
-  </div>
-</section>
-<section id="portfolio" class="parallax parallax2">
-  <div class="container">
-    <h2>Chrome Series 1 to Chrome Series 6 available</h2>
-    <div class="glass">
-      <p></p>
-    </div>
-    <a href="#" class="button">View Portfolio</a>
-  </div>
-</section>
-<section id="contact" class="parallax parallax3">
-  <div class="container">
-    <h2>Custom Crafted/Fan Made Merchandise</h2>
-    <div class="glass">
-      <p>Check out some of the custom made merchandise crafted by fans with meticulous attention to details.</p>
-    </div>
-    <a href="#" class="button">Get in Touch</a>
-  </div>
-</section>
-<section class="parallax parallax4">
-  <div class="container">
-    <h2>Modern/Themed Series Sets and Cards Available from 2016 to 2024</h2>
-    <div class="glass">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae urna eu arcu vehicula pharetra. Nullam et quam nec libero finibus varius.</p>
-    </div>
-  </div>
-</section>
-<section class="parallax parallax5">
-  <div class="container">
-    <div class="container">
-    <h2>Additional Section 2</h2>
-    <div class="glass">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae urna eu arcu vehicula pharetra. Nullam et quam nec libero finibus varius.</p>
-    </div>
-  </div>
-</section>
-<section class="parallax parallax6">
-  <div class="container">
-    <h2>Additional Section 3</h2>
-    <div class="glass">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae urna eu arcu vehicula pharetra. Nullam et quam nec libero finibus varius.</p>
-    </div>
-  </div>
-</section>
-<footer class="lightbox">
-  <p>&copy; 2024 CaliDef Web Design. All rights reserved.</p>
-</footer>
+
+    <div id="overlay" onclick="toggleMenu()"></div>
+
+    <section class="hero-section" id="home">
+        <h1>Welcome to Our Store</h1>
+        <p>Discover the best products here</p>
+        <a href="#products" class="cta-button">Shop Now</a>
+    </section>
+
+    <section class="products-section" id="products">
+        <h2>Our Products</h2>
+        <div class="grid-container">
+            <div class="grid-item neumorphism">
+                <img src="product1.jpg" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>Description for product 1.</p>
+                <button class="cta-button">Buy Now</button>
+            </div>
+            <div class="grid-item neumorphism">
+                <img src="product2.jpg" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>Description for product 2.</p>
+                <button class="cta-button">Buy Now</button>
+            </div>
+            <div class="grid-item neumorphism">
+                <img src="product3.jpg" alt="Product 3">
+                <h3>Product 3</h3>
+                <p>Description for product 3.</p>
+                <button class="cta-button">Buy Now</button>
+            </div>
+            <div class="grid-item neumorphism">
+                <img src="product4.jpg" alt="Product 4">
+                <h3>Product 4</h3>
+                <p>Description for product 4.</p>
+                <button class="cta-button">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section" id="about">
+        <div class="glassmorphism">
+            <h2>About Us</h2>
+            <p>Learn more about our story and values.</p>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="glassmorphism">
+            <h2>Contact Us</h2>
+            <p>Get in touch with us for any queries.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+        <p>&copy; 2024 Your Ecommerce Store</p>
+    </footer>
+
+    <a href="#top" id="back-to-top">↑</a>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            const overlay = document.getElementById('overlay');
+            if (menu.style.left === '0px') {
+                menu.style.left = '-250px';
+                overlay.style.display = 'none';
+            } else {
+                menu.style.left = '0px';
+                overlay.style.display = 'block';
+            }
+        }
+
+        // Show back to top button
+        window.onscroll = function() {
+            const backToTop = document.getElementById('back-to-top');
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                backToTop.style.display = 'block';
+            } else {
+                backToTop.style.display = 'none';
+            }
+        };
+    </script>
 </body>
 </html>
